@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PokemonActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:background="?attr/colorSecondaryVariant"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/pokemonSName"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:clickable="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="30dp"
+        android:text="Pokemon X"
+        android:textColor="?android:attr/textColorPrimary"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/pokemonIdView"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginStart="310dp"
+        android:layout_marginTop="30dp"
+        android:text="#001"
+        android:textColor="?android:attr/textColorPrimary"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/pokemonSpecies"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginStart="175dp"
+        android:layout_marginTop="50dp"
+        android:text="Species: "
+        android:textColor="?android:attr/textColorPrimary"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pokemonSName" />
+
+    <TextView
+        android:id="@+id/pokemonTypeView"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginStart="175dp"
+        android:layout_marginTop="90dp"
+        android:text="Tipo: "
+        android:textColor="?android:attr/textColorPrimary"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pokemonSName" />
+
+    <ImageView
+        android:id="@+id/pokemonImageSView"
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="50dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pokemonSName" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
